@@ -1,0 +1,409 @@
+source,target,count
+ASSISTANT,CJ (Carl Johnson),2
+ASSISTANT,Ken Rosenberg (Rosie),1
+ASSISTANT,MILLIE,1
+ASSISTANT,OCCUPANT,1
+ASSISTANT,Woozie (Wu Zi Mu),3
+ASSISTANT 1,CJ (Carl Johnson),1
+B Dup,Big Bear,5
+B Dup,CJ (Carl Johnson),5
+B Dup,SWEET,3
+BALLA,SWEET,1
+BIKER,CJ (Carl Johnson),1
+BODYGUARD,CJ (Carl Johnson),1
+BOUNCER 1,JIZZY,1
+BURGER SHOT EMPLOYEE,CJ (Carl Johnson),3
+Big Bear,B Dup,5
+Big Bear,CJ (Carl Johnson),1
+Big Bear,SWEET,2
+Big Smoke,Big Smoke,21
+Big Smoke,CJ (Carl Johnson),41
+Big Smoke,ESE 1,2
+Big Smoke,Emmet,4
+Big Smoke,OG Loc,2
+Big Smoke,POLICEMAN,1
+Big Smoke,Ryder,8
+Big Smoke,SWEET,17
+Big Smoke,TENPENNY,1
+CESAR,BOUNCER 1,1
+CESAR,CESAR,10
+CESAR,CJ (Carl Johnson),63
+CESAR,ESE 1,2
+CESAR,HOMIE,2
+CESAR,HOMIE 3,1
+CESAR,KENDL,8
+CESAR,MAN 1,1
+CESAR,SWEET,1
+CESAR,Suzie,2
+CESAR,TENPENNY,1
+CESAR,The Truth,1
+CESAR,Woozie (Wu Zi Mu),4
+CESAR,Zero,1
+CJ (Carl Johnson),ASSISTANT,2
+CJ (Carl Johnson),B Dup,4
+CJ (Carl Johnson),BALLA,1
+CJ (Carl Johnson),BIKER,1
+CJ (Carl Johnson),BURGER SHOT EMPLOYEE,3
+CJ (Carl Johnson),Big Bear,2
+CJ (Carl Johnson),Big Smoke,42
+CJ (Carl Johnson),CESAR,61
+CJ (Carl Johnson),CJ (Carl Johnson),49
+CJ (Carl Johnson),Catalina,40
+CJ (Carl Johnson),DENISE,3
+CJ (Carl Johnson),Dwaine,1
+CJ (Carl Johnson),EMPLOYEE,3
+CJ (Carl Johnson),ESE 1,1
+CJ (Carl Johnson),Emmet,3
+CJ (Carl Johnson),FARLIE,2
+CJ (Carl Johnson),FOREMAN,1
+CJ (Carl Johnson),Freddy,1
+CJ (Carl Johnson),GUARD,2
+CJ (Carl Johnson),GUPPY,3
+CJ (Carl Johnson),HOMIE,3
+CJ (Carl Johnson),HOMIE 1,1
+CJ (Carl Johnson),JIMMY,1
+CJ (Carl Johnson),JIZZY,12
+CJ (Carl Johnson),JOHNNY,2
+CJ (Carl Johnson),Jethro,2
+CJ (Carl Johnson),KENDL,23
+CJ (Carl Johnson),Ken Rosenberg (Rosie),13
+CJ (Carl Johnson),MAN,3
+CJ (Carl Johnson),MAN 1,10
+CJ (Carl Johnson),MAN 2,1
+CJ (Carl Johnson),MECHANIC,1
+CJ (Carl Johnson),MIDGET,1
+CJ (Carl Johnson),MILLIE,4
+CJ (Carl Johnson),Maccer,10
+CJ (Carl Johnson),Madd Dogg,24
+CJ (Carl Johnson),OCCUPANT,3
+CJ (Carl Johnson),OG Loc,33
+CJ (Carl Johnson),OK.,1
+CJ (Carl Johnson),OK...,1
+CJ (Carl Johnson),POLICE,1
+CJ (Carl Johnson),POLICEMAN,2
+CJ (Carl Johnson),Paul,10
+CJ (Carl Johnson),Pulaski,12
+CJ (Carl Johnson),RECEPTIONIST,1
+CJ (Carl Johnson),Ryder,52
+CJ (Carl Johnson),SALESMAN,2
+CJ (Carl Johnson),SALVATORE,4
+CJ (Carl Johnson),SCIPIO,1
+CJ (Carl Johnson),SWEET,79
+CJ (Carl Johnson),Suzie,8
+CJ (Carl Johnson),TENPENNY,43
+CJ (Carl Johnson),TORENO,52
+CJ (Carl Johnson),TRIAD 1,1
+CJ (Carl Johnson),TRIAD 2,1
+CJ (Carl Johnson),The Truth,45
+CJ (Carl Johnson),Tony (el loro de Rosie),10
+CJ (Carl Johnson),VAGOS 1,1
+CJ (Carl Johnson),Woozie (Wu Zi Mu),68
+CJ (Carl Johnson),Zero,29
+CLUCKIN' BELL EMPLOYEE,Big Smoke,1
+Catalina,CJ (Carl Johnson),41
+Catalina,Catalina,12
+Catalina,MAN,2
+Catalina,OK.,1
+Catalina,The Truth,1
+Catalina,WHITTAKER,3
+DA NANG BOY 1,DA NANG BOY 2,2
+DA NANG BOY 2,DA NANG BOY 1,1
+DA NANG BOY 2,REFUGEE 1,1
+DENISE,CJ (Carl Johnson),3
+DENISE,DENISE,1
+DENISE,Pulaski,1
+DEREK,Catalina,2
+DRIVER,CJ (Carl Johnson),1
+Dwaine,CJ (Carl Johnson),1
+Dwaine,Jethro,1
+Dwaine,POLICEMAN 1,2
+Dwaine,The Truth,1
+EMPLOYEE,CJ (Carl Johnson),4
+ESE,ESE,1
+ESE,KENDL,1
+ESE 1,Big Smoke,1
+ESE 1,CJ (Carl Johnson),3
+ESE 1,KENDL,2
+EVERYTHING.,CJ (Carl Johnson),1
+Emmet,Big Smoke,4
+Emmet,CJ (Carl Johnson),3
+FARLIE,GUPPY,3
+FARLIE,Woozie (Wu Zi Mu),2
+FOREMAN,CJ (Carl Johnson),1
+FOREMAN,FOREMAN,1
+Freddy,OG Loc,2
+GIRL,CJ (Carl Johnson),2
+GIRL,SWEET,2
+GUARD,CJ (Carl Johnson),1
+GUARD,MAN,1
+GUARD 1,GUARD 2,1
+GUARD 2,CJ (Carl Johnson),1
+GUPPY,CJ (Carl Johnson),7
+GUPPY,DA NANG BOY 1,1
+GUPPY,GUPPY,1
+GUPPY,OK.,1
+GUPPY,Woozie (Wu Zi Mu),1
+HILLBILLY 1,CJ (Carl Johnson),1
+HILLBILLY 1,HILLBILLY 2,1
+HILLBILLY 2,HILLBILLY 3,1
+HILLBILLY 3,HILLBILLY WOMAN,1
+HILLBILLY WOMAN,HILLBILLY 1,1
+HO,CJ (Carl Johnson),1
+HO 1,JIZZY,2
+HOMIE,CESAR,1
+HOMIE,CJ (Carl Johnson),1
+HOMIE,SWEET,5
+HOMIE 1,HOMIE 2,1
+HOMIE 1,SWEET,1
+HOMIE 2,CESAR,1
+HOMIE 2,SWEET,1
+HOMIE 3,CESAR,1
+HOMIES,SWEET,1
+JIMMY,CJ (Carl Johnson),1
+JIMMY,OG Loc,1
+JIZZY,CESAR,1
+JIZZY,CJ (Carl Johnson),12
+JIZZY,HO,1
+JIZZY,HO 1,2
+JIZZY,JIZZY,3
+JIZZY,MAN 1,1
+JIZZY,PREACHER,1
+JIZZY,Tony (el loro de Rosie),6
+JOHNNY,CJ (Carl Johnson),4
+JOHNNY,Ken Rosenberg (Rosie),2
+Jethro,CJ (Carl Johnson),3
+Jethro,The Truth,1
+Jethro,Zero,1
+KENDL,CESAR,9
+KENDL,CJ (Carl Johnson),24
+KENDL,ESE 1,1
+KENDL,KENDL,1
+KENDL,Madd Dogg,1
+KENDL,REPORTER,1
+KENDL,SWEET,9
+KENDL,The Truth,4
+KENDL,Woozie (Wu Zi Mu),1
+KENDL,Zero,1
+Ken Rosenberg (Rosie),BODYGUARD,1
+Ken Rosenberg (Rosie),CJ (Carl Johnson),10
+Ken Rosenberg (Rosie),JOHNNY,3
+Ken Rosenberg (Rosie),KENDL,1
+Ken Rosenberg (Rosie),Ken Rosenberg (Rosie),4
+Ken Rosenberg (Rosie),Maccer,2
+Ken Rosenberg (Rosie),Madd Dogg,1
+Ken Rosenberg (Rosie),Paul,9
+Ken Rosenberg (Rosie),SALVATORE,2
+Ken Rosenberg (Rosie),TENPENNY,1
+Ken Rosenberg (Rosie),Tony (el loro de Rosie),1
+MAN,CJ (Carl Johnson),4
+MAN,DEREK,2
+MAN,MAN,2
+MAN,OG Loc,1
+MAN,REPORTER,1
+MAN,SCIPIO,1
+MAN,SWEET,1
+MAN,TORENO,1
+MAN,Woozie (Wu Zi Mu),1
+MAN 1,CESAR,1
+MAN 1,CJ (Carl Johnson),3
+MAN 1,Catalina,1
+MAN 1,MAN 1,1
+MAN 1,MAN 2,7
+MAN 1,Madd Dogg,1
+MAN 2,ASSISTANT 1,1
+MAN 2,CESAR,1
+MAN 2,CJ (Carl Johnson),4
+MAN 2,Ken Rosenberg (Rosie),1
+MAN 2,MAN 1,1
+MARIA,MARIA,1
+MARIA,SALVATORE,4
+MARIA,Tony (el loro de Rosie),1
+MECHANIC,CJ (Carl Johnson),1
+MECHANIC,ESE,1
+MECHANIC,MECHANIC,1
+MIDGET,KENDL,2
+MIDGET,Woozie (Wu Zi Mu),1
+MILLIE,ASSISTANT,1
+MILLIE,CJ (Carl Johnson),4
+MILLIE,MILLIE,4
+Maccer,CJ (Carl Johnson),6
+Maccer,Ken Rosenberg (Rosie),3
+Maccer,Maccer,1
+Maccer,Paul,20
+Maccer,REPORTER,2
+Maccer,Tony (el loro de Rosie),1
+Madd Dogg,CJ (Carl Johnson),24
+Madd Dogg,JIMMY,1
+Madd Dogg,KENDL,1
+Madd Dogg,Ken Rosenberg (Rosie),1
+Madd Dogg,Maccer,3
+Madd Dogg,OG Loc,3
+Madd Dogg,Paul,1
+Madd Dogg,Woozie (Wu Zi Mu),1
+OCCUPANT,CJ (Carl Johnson),1
+OCCUPANT,Suzie,1
+OCCUPANT,Woozie (Wu Zi Mu),1
+OCCUPANT,Zero,1
+OG Loc,Big Smoke,3
+OG Loc,CJ (Carl Johnson),34
+OG Loc,Freddy,1
+OG Loc,GIRL,1
+OG Loc,MAN,2
+OG Loc,Madd Dogg,3
+OG Loc,OG Loc,7
+OG Loc,Ryder,1
+OG Loc,SWEET,1
+OG Loc,TENPENNY,1
+OK.,CJ (Carl Johnson),2
+OK.,The Truth,1
+OK...,OG Loc,1
+PILOT,CJ (Carl Johnson),1
+PIZZA CO. EMPLOYEE,CJ (Carl Johnson),1
+PIZZA CO. EMPLOYEE,Ryder,1
+POLICE,Dwaine,1
+POLICEMAN,CJ (Carl Johnson),1
+POLICEMAN,Catalina,1
+POLICEMAN,POLICEMAN 1,1
+POLICEMAN,Ryder,1
+POLICEMAN,SWEET,1
+POLICEMAN 1,CJ (Carl Johnson),1
+POLICEMAN 1,POLICEMAN 2,3
+POLICEMAN 2,Dwaine,1
+POLICEMAN 2,POLICEMAN,1
+POLICEMAN 2,SWEET,1
+PREACHER,DRIVER,1
+Paul,ASSISTANT,1
+Paul,CJ (Carl Johnson),11
+Paul,HILLBILLY 1,1
+Paul,Ken Rosenberg (Rosie),8
+Paul,Maccer,13
+Paul,Madd Dogg,2
+Paul,Paul,3
+Paul,SALVATORE,2
+Paul,TORENO,1
+Paul,Tony (el loro de Rosie),1
+Pulaski,CJ (Carl Johnson),15
+Pulaski,Catalina,1
+Pulaski,Pulaski,1
+Pulaski,Ryder,2
+Pulaski,TENPENNY,17
+RECEPTIONIST,CJ (Carl Johnson),2
+REFUGEE 1,CESAR,1
+REFUGEE 1,REFUGEE 1,2
+REPORTER,KENDL,2
+REPORTER,Madd Dogg,1
+REPORTER,REPORTER,1
+REPORTER,SCIPIO,1
+REPORTER,SWEET,2
+Ryder,Big Smoke,5
+Ryder,CESAR,1
+Ryder,CJ (Carl Johnson),49
+Ryder,CLUCKIN' BELL EMPLOYEE,1
+Ryder,OG Loc,1
+Ryder,PIZZA CO. EMPLOYEE,2
+Ryder,POLICEMAN 1,1
+Ryder,Ryder,16
+Ryder,SWEET,12
+Ryder,TENPENNY,4
+SALESMAN,CESAR,1
+SALESMAN,CJ (Carl Johnson),1
+SALVATORE,CJ (Carl Johnson),6
+SALVATORE,MARIA,5
+SALVATORE,Maccer,1
+SALVATORE,Pulaski,1
+SCIPIO,CJ (Carl Johnson),1
+SCIPIO,MAN,1
+SCIPIO,OG Loc,1
+SWEET,B Dup,4
+SWEET,Big Bear,1
+SWEET,Big Smoke,20
+SWEET,CESAR,2
+SWEET,CJ (Carl Johnson),85
+SWEET,GIRL,3
+SWEET,HOMIE,2
+SWEET,HOMIE 1,1
+SWEET,HOMIE 2,1
+SWEET,HOMIES,1
+SWEET,KENDL,7
+SWEET,Ken Rosenberg (Rosie),1
+SWEET,MECHANIC,1
+SWEET,Maccer,1
+SWEET,Madd Dogg,1
+SWEET,OG Loc,2
+SWEET,POLICEMAN,1
+SWEET,Ryder,9
+SWEET,SWEET,25
+SWEET,The Truth,1
+Suzie,ASSISTANT,1
+Suzie,CESAR,2
+Suzie,CJ (Carl Johnson),10
+Suzie,Suzie,2
+Suzie,Woozie (Wu Zi Mu),4
+TENPENNY,CJ (Carl Johnson),40
+TENPENNY,DENISE,1
+TENPENNY,Pulaski,21
+TENPENNY,Ryder,2
+TENPENNY,SWEET,2
+TENPENNY,TENPENNY,5
+TENPENNY,The Truth,2
+TENPENNY,Woozie (Wu Zi Mu),1
+TORENO,CESAR,1
+TORENO,CJ (Carl Johnson),49
+TORENO,MAN,1
+TORENO,Maccer,1
+TORENO,PILOT,1
+TORENO,SWEET,1
+TORENO,TORENO,12
+TORENO,The Truth,1
+TORENO,Tony (el loro de Rosie),6
+TRIAD,Maccer,1
+TRIAD 1,CJ (Carl Johnson),1
+TRIAD 1,TRIAD 2,2
+TRIAD 1,TRIAD 3,1
+TRIAD 2,TRIAD 1,3
+TRIAD 3,TRIAD 4,1
+TRIAD 4,TRIAD,1
+The Truth,CESAR,1
+The Truth,CJ (Carl Johnson),47
+The Truth,Dwaine,2
+The Truth,EVERYTHING.,1
+The Truth,Jethro,2
+The Truth,KENDL,1
+The Truth,REPORTER,2
+The Truth,SWEET,1
+The Truth,TENPENNY,1
+The Truth,The Truth,8
+The Truth,Zero,1
+Tony (el loro de Rosie),CJ (Carl Johnson),8
+Tony (el loro de Rosie),JIZZY,8
+Tony (el loro de Rosie),Ken Rosenberg (Rosie),1
+Tony (el loro de Rosie),RECEPTIONIST,1
+Tony (el loro de Rosie),SALVATORE,1
+Tony (el loro de Rosie),TORENO,7
+Tony (el loro de Rosie),Tony (el loro de Rosie),1
+VAGOS 1,CJ (Carl Johnson),1
+VAGOS 1,VAGOS 1,1
+WHITTAKER,Catalina,3
+Woozie (Wu Zi Mu),ASSISTANT,3
+Woozie (Wu Zi Mu),CESAR,1
+Woozie (Wu Zi Mu),CJ (Carl Johnson),62
+Woozie (Wu Zi Mu),EMPLOYEE,1
+Woozie (Wu Zi Mu),FARLIE,3
+Woozie (Wu Zi Mu),GUARD 1,1
+Woozie (Wu Zi Mu),GUPPY,4
+Woozie (Wu Zi Mu),JIZZY,1
+Woozie (Wu Zi Mu),JOHNNY,1
+Woozie (Wu Zi Mu),KENDL,2
+Woozie (Wu Zi Mu),MAN,2
+Woozie (Wu Zi Mu),MIDGET,2
+Woozie (Wu Zi Mu),Madd Dogg,1
+Woozie (Wu Zi Mu),Suzie,4
+Woozie (Wu Zi Mu),Woozie (Wu Zi Mu),5
+Woozie (Wu Zi Mu),Zero,2
+Zero,CESAR,2
+Zero,CJ (Carl Johnson),28
+Zero,KENDL,1
+Zero,Suzie,2
+Zero,The Truth,1
+Zero,Woozie (Wu Zi Mu),2
+Zero,Zero,6

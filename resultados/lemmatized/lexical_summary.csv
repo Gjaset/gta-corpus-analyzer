@@ -1,0 +1,92 @@
+Personaje,tokens,types,TTR,hapax,hapax_pct,avg_lemma_len,top20
+CJ (Carl Johnson),5198,1198,0.2305,625,0.5217,5.44,man;get;cj;hey;go;yeah;shit;oh;screen;see;know;take;look;smoke;woozie;come;car;sweet;let;back
+SWEET,1333,450,0.3376,236,0.5244,5.06,cj;get;sweet;go;man;shit;hood;back;ballas;car;let;house;like;homie;know;pull;yeah;see;grove;street
+TORENO,937,485,0.5176,322,0.6639,5.47,get;cj;go;need;carl;toreno;ok;take;little;kid;guy;plane;outside;like;one;come;screen;make;watch;think
+Woozie (Wu Zi Mu),918,496,0.5403,323,0.6512,5.33,cj;get;go;woozie;screen;one;carl;take;come;casino;know;ok;look;enter;friend;good;people;oh;open;triad
+CESAR,825,392,0.4752,262,0.6684,4.96,cj;get;holme;go;cesar;car;man;eh;back;hey;look;garage;one;homie;come;know;fuck;good;ok;carl
+TENPENNY,818,414,0.5061,281,0.6787,5.11,carl;get;cj;go;tenpenny;yeah;know;man;oh;officer;time;pulaski;fuck;hey;take;come;let;shit;like;run
+Big Smoke,805,318,0.395,203,0.6384,4.99,smoke;big;cj;man;get;hey;shit;go;sweet;baby;know;yeah;glass;look;shoot;bottle;fuck;fool;take;back
+Ryder,687,289,0.4207,178,0.6159,5.0,cj;man;get;ryder;fool;shit;homie;go;hey;yeah;grove;sweet;drive;street;damn;tell;back;look;house;smoke
+The Truth,640,348,0.5437,244,0.7011,5.05,man;get;cj;go;truth;jethro;know;carl;friend;dude;pull;see;peace;outside;van;well;think;back;everything;look
+OG Loc,543,251,0.4622,158,0.6295,4.98,man;loc;get;og;cj;hey;homie;go;dogg;fucker;real;madd;mother;gangsta;yeah;rap;shit;like;party;rhyme
+Zero,459,306,0.6667,233,0.7614,5.51,cj;berkley;zero;get;carl;never;man;fight;two;police;leave;back;go;screen;ha;well;heist;good;yes;shall
+Catalina,445,240,0.5393,165,0.6875,4.93,cj;catalina;man;go;fucking;fuck;carl;say;love;house;see;real;hand;goodbye;bitch;think;sorry;keep;walk;bike
+JIZZY,420,230,0.5476,142,0.6174,4.95,get;cj;jizzy;go;man;baby;bone;see;walk;hos;bitch;know;want;car;mink;like;pimp;hotel;playa;mobile
+Ken Rosenberg (Rosie),370,229,0.6189,173,0.7555,5.3,go;get;boss;calm;ok;ken;oh;come;one;johnny;doorman;let;fuck;know;paul;family;ha;yeah;please;huh
+KENDL,338,193,0.571,132,0.6839,4.98,get;carl;look;go;think;know;cesar;hey;like;right;shit;make;let;huh;cj;life;property;work;yeah;see
+Paul,241,150,0.6224,106,0.7067,5.16,maccer;rosie;cj;go;son;fucking;casino;sweet;come;paul;oh;caligula;enter;madd;dogg;fuck;tell;stand;get;gig
+Madd Dogg,235,139,0.5915,97,0.6978,4.8,cj;man;go;know;fuck;shit;get;oh;rhyme;jump;back;woah;book;loc;fake;ass;gangsta;stay;phrase;madd
+Pulaski,229,156,0.6812,116,0.7436,5.08,pulaski;carl;cj;yeah;hernandez;go;get;fucking;tenpenny;fuck;want;car;smoke;screen;away;watch;prick;work;catch;well
+MAN,207,140,0.6763,101,0.7214,4.89,cj;get;man;car;time;suck;go;come;need;awards;show;vietnamese;yo;shit;damn;bad;walk;via;radio;hey
+Tony (el loro de Rosie),183,116,0.6339,84,0.7241,4.84,hey;man;get;cj;ese;holme;mike;fuck;know;phone;bounce;talk;come;fucking;pinche;say;shit;bone;ring;yeah
+Maccer,156,111,0.7115,83,0.7477,4.88,fuck;oh;go;ooh;tit;twat;fucking;feel;man;love;eh;wank;turn;shite;get;rag;paul;maccer;cj;like
+Suzie,121,91,0.7521,75,0.8242,5.15,know;boss;cj;guy;suzie;point;photo;hey;big;yes;good;call;woozie;police;could;take;loco;syndicate;pretty;time
+MILLIE,120,70,0.5833,49,0.7,4.91,millie;cj;get;sex;house;shop;inside;outside;oh;benny;see;screen;close;enter;cubicle;assistant;master;come;know;woozie
+B Dup,117,74,0.6325,54,0.7297,4.72,fuck;bear;man;get;big;homie;know;hey;door;want;outta;thing;come;fool;give;smoke;house;mother;shit;say
+SALVATORE,96,76,0.7917,62,0.8158,4.93,like;well;get;heh;forelli;kid;man;know;send;hit;take;want;cj;plane;pretty;thing;girl;name;hear;bird
+MAN 2,96,70,0.7292,57,0.8143,4.83,cj;man;jump;garage;casino;rosie;come;run;get;car;crack;caligula;real;blast;moron;open;gate;three;towards;screen
+GUPPY,80,66,0.825,54,0.8182,5.41,cj;leave;woozie;da;nang;boys;johnson;two;car;strap;water;ship;shuk;foo;would;like;package;retrieve;courier;drop
+MAN 1,77,58,0.7532,48,0.8276,4.28,hey;jump;cj;get;two;man;come;cesar;go;money;cash;let;outta;funky;ass;ho;murmur;walk;away;enter
+REPORTER,66,61,0.9242,58,0.9508,6.43,officer;pulaski;fellow;congratulation;award;must;thrill;tv;eddie;frank;tenpenny;hard;work;member;community;police;unit;charge;racketeering;corruption
+MECHANIC,65,55,0.8462,46,0.8364,4.31,come;car;way;back;ese;unity;station;time;get;must;sweet;bro;huh;phone;ahead;say;might;look;bounce;well
+POLICEMAN,56,39,0.6964,26,0.6667,5.46,police;megaphone;cj;chopper;los;santos;department;get;unit;bank;come;motorbike;catalina;everybody;stay;car;rock;roll;start;drop
+ASSISTANT,55,45,0.8182,37,0.8222,4.76,boss;cj;one;casino;sure;look;take;go;boy;find;thug;try;smash;delivery;catch;get;good;work;woozie;planning
+JOHNNY,52,40,0.7692,30,0.75,4.72,fuck;get;hey;untie;cj;ken;ah;oh;god;heart;huh;stupid;joke;mother;fucker;car;heeyyy;christ;fucking;thing
+Emmet,45,38,0.8444,33,0.8684,4.97,boy;beverly;place;remember;get;hey;shoot;kid;want;johnson;brian;say;dead;sorry;well;come;right;try;anything;like
+ESE 1,45,35,0.7778,27,0.7714,4.6,pendejo;horale;say;cool;man;fuck;lucky;ese;vato;well;holme;think;gangster;like;know;maybe;right;cesar;speak;vamano
+TRIAD,45,31,0.6889,23,0.7419,4.94,madd;dogg;head;get;crib;cj;maccer;paul;heavily;outnumber;keep;kick;ass;triad;blow;big;poppa;car;outside;screen
+Big Bear,43,36,0.8372,30,0.8333,4.75,tired;hell;yeah;cj;man;sweet;sir;everyone;like;party;sometimes;see;around;lordship;smoking;crack;fucking;housework;big;bear
+HOMIE,42,33,0.7857,28,0.8485,4.45,yo;need;cat;get;something;hey;ballas;posse;run;head;right;dup;move;back;sweet;pick;homie;shake;mess;colour
+POLICEMAN 2,39,33,0.8462,28,0.8485,4.73,two;drive;car;policeman;get;let;roll;big;smoke;high;speed;alleyway;four;homie;still;collect;bribe;later;might;well
+GUARD,38,31,0.8158,25,0.8065,5.45,cj;planning;dam;woozie;room;casino;everybody;drill;man;department;two;policeman;hatch;get;trap;way;ledge;police;surround;dive
+DENISE,38,31,0.8158,27,0.871,5.19,denise;cj;oh;god;scared;ceiling;collapse;landing;hey;man;owe;life;pull;outside;house;robinson;give;call;sometime;go
+FOREMAN,37,29,0.7838,23,0.7931,5.14,mobile;toilet;foreman;screen;cement;cj;damn;clatter;notice;destroy;portable;run;back;holy;crap;see;nothing;push;ditch;bury
+JIMMY,37,31,0.8378,27,0.871,4.35,heh;phoney;dogg;hit;yeah;jimmy;silverman;blastin;fools;records;oh;ok;pleasure;gentleman;let;talk;right;need;mean;guy
+REFUGEE 1,36,26,0.7222,22,0.8462,5.42,snakehead;cj;please;bridge;trick;prisoner;help;escape;screen;throw;sword;enough;settle;four;refugee;two;dinghy;also;one;thank
+MIDGET,34,27,0.7941,21,0.7778,4.85,like;man;thank;take;song;want;singing;hate;little;pack;shooter;know;much;ball;stand;sing;gut;could;mass;appeal
+WHITTAKER,33,26,0.7879,22,0.8462,4.73,catalina;never;get;see;bring;today;give;wad;cash;likewise;cop;come;snoop;ever;want;run;freight;drop;always;shit
+SCIPIO,32,28,0.875,26,0.9286,4.54,yeah;back;like;thank;fan;momma;dealer;cut;three;car;hey;man;take;dogg;mansion;slow;motion;voice;holy;fuuuuuuuuuuck
+DA NANG BOY 2,31,25,0.8065,21,0.84,4.28,cj;ship;container;refugee;nobody;get;alive;jump;onto;low;deck;three;da;nang;boys;long;drink;cola;free;west
+POLICEMAN 1,30,27,0.9,24,0.8889,5.56,doughnut;policeman;car;waste;good;shit;buy;another;criminal;consideration;shut;find;anything;back;check;boot;eloquent;defence;get;buddy
+Dwaine,30,27,0.9,24,0.8889,4.11,shit;man;uh;totally;happenin;ah;yeah;cool;get;like;take;care;first;though;tell;guy;go;meet;dude;hey
+GIRL,30,25,0.8333,20,0.8,4.0,dup;sweet;come;enjoy;go;little;bit;party;hear;get;gift;make;sure;rich;man;high;player;know;take;pain
+Jethro,29,22,0.7586,18,0.8182,4.5,dude;man;hey;office;truth;oh;owe;coz;swear;pay;weed;like;listen;real;serious;shit;cj;whassup;cop;lookin
+Freddy,29,28,0.9655,27,0.9643,5.0,get;jeffrey;wrong;idea;man;prison;thing;plenty;muchachas;outside;need;scrawny;ass;drop;soap;sugar;know;nothing;rhyme;freddy
+HILLBILLY 1,28,22,0.7857,16,0.7273,5.27,hillbilly;cj;maccer;paul;caligula;casino;take;gander;fella;tarnation;fixing;give;ya;whoopin;go;young;un;follow;along;vehicle
+PREACHER,26,25,0.9615,24,0.96,5.04,get;lord;send;save;thread;bear;soul;harlot;car;remove;filthy;vestment;well;gaze;upon;thine;corruption;driver;devil;right
+BURGER SHOT EMPLOYEE,25,20,0.8,16,0.8,4.4,loc;back;clean;fryer;whuh;want;fry;oh;mean;jeffrey;yeah;appliance;technician;call;sick;get;promote;cj;go;og
+MARIA,25,24,0.96,23,0.9583,4.92,maria;sandwich;usually;kind;shit;know;service;include;come;salvatore;man;hand;note;kid;see;later;guy;exit;cj;enter
+VAGOS 1,20,15,0.75,11,0.7333,5.2,cesar;vagos;aztecas;burn;rule;varrio;send;flame;flamethrower;cj;one;homie;walk;towards;house
+OCCUPANT,18,18,1.0,18,1.0,4.33,live;great;ha;hey;good;job;little;ass;kisser;occupant;pat;zero;back;fire;hole;door;safe;explode
+HOMIE 3,17,11,0.6471,8,0.7273,5.18,cesar;cj;cool;must;say;holme;three;homie;walk;towards;neighbourhood
+HOMIE 2,16,16,1.0,16,1.0,5.25,yeah;let;roll;throughout;sweet;speech;homie;constantly;agree;raspalo;hasta;el;hueso;cj;cesar;appear
+HILLBILLY 2,15,15,1.0,15,1.0,4.33,city;boy;go;prize;hog;even;get;sugar;two;hillbilly;come;around;corner;man;woman
+BOUNCER 1,14,11,0.7857,8,0.7273,4.45,jizzy;club;two;want;disturb;screen;use;skylight;get;hos;man
+ESE,14,12,0.8571,10,0.8333,4.25,cj;come;bounce;homie;win;contest;ese;see;bad;alright;kendl;hug
+TRIAD 4,14,10,0.7143,6,0.6,4.9,triad;jump;plane;cj;whaaaheeeee;next;inside;madd;dogg;crib
+GUARD 2,13,13,1.0,13,1.0,3.77,end;phone;yet;lock;quay;entrance;cop;way;cj;top;one;dam;tower
+HO 1,13,13,1.0,13,1.0,4.08,well;make;big;cut;week;jiz;run;low;honey;even;raise;voice;asshole
+SALESMAN,12,12,1.0,12,1.0,5.17,help;two;eerr;gentleman;yeah;sound;like;good;idea;salesman;run;downstairs
+TRIAD 1,12,12,1.0,12,1.0,4.92,element;surprise;nah;land;go;feel;invincible;hey;wait;triad;jump;plane
+PILOT,11,11,1.0,11,1.0,5.64,steal;aircraft;prepare;vaporize;cj;recording;studio;madd;dogg;crib;phone
+DEREK,11,11,1.0,11,1.0,4.73,man;son;give;cash;cj;catalina;pull;tanker;truck;yard;whittaker
+BIKER,9,8,0.8889,7,0.875,5.12,woozie;decoy;back;chinatown;cj;upstairs;bet;shop
+RECEPTIONIST,8,8,1.0,8,1.0,5.5,hello;sir;help;sindacco;must;mistake;ambulance;pick
+TRIAD 2,8,6,0.75,4,0.6667,5.17,triad;jump;ever;nah;invincible;plane
+EMPLOYEE,8,8,1.0,8,1.0,4.38,closed;pokgai;oh;upstairs;ai;see;round;new
+HILLBILLY WOMAN,7,7,1.0,7,1.0,4.14,go;slap;silly;give;fella;red;bumpie
+PIZZA CO. EMPLOYEE,7,7,1.0,7,1.0,4.14,ryder;one;else;small;feel;sorry;dad
+POLICE,7,7,1.0,7,1.0,4.0,police;move;get;outta;car;hand;air
+HILLBILLY 3,7,7,1.0,7,1.0,4.43,one;screw;sis;aching;grind;ever;since
+DA NANG BOY 1,7,7,1.0,7,1.0,6.0,see;survivor;container;keep;want;bring;snakehead
+DRIVER,7,7,1.0,7,1.0,5.71,right;away;evangelical;holiness;cj;pimp;mobile
+BALLA,6,6,1.0,6,1.0,4.83,tenpenny;set;cj;sweet;grove;street
+FARLIE,6,2,0.3333,1,0.5,9.0,grunt;questioningly
+HOMIES,5,5,1.0,5,1.0,4.4,grove;street;king;cj;enter
+HOMIE 1,5,5,1.0,5,1.0,3.4,vagos;man;go;cut;caco
+TRIAD 3,4,4,1.0,4,1.0,6.25,whaaahooooo;triad;jump;plane
+ASSISTANT 1,3,3,1.0,3,1.0,3.0,hey;carl;go
+CLUCKIN' BELL EMPLOYEE,3,3,1.0,3,1.0,5.0,take;order;please
+BODYGUARD,3,3,1.0,3,1.0,8.33,private;function;invitation
+GUARD 1,3,3,1.0,3,1.0,4.0,phone;sign;yet
+HO,2,2,1.0,2,1.0,4.0,later;ese
