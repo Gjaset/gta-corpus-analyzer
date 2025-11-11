@@ -1,0 +1,1 @@
+/home/gjaset/Escritorio/python/venv/bin/streamlit run streamlit_dashboard.py

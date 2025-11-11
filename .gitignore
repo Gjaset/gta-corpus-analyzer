@@ -1,0 +1,131 @@
+# Entorno Virtual
+venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Streamlit
+.streamlit/
+.streamlit_cache/
+.streamlit_cache2/
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Datos locales
+*.csv
+!personajes_gta_san_andreas.csv
+!guionGTA.txt
+*.xlsx
+*.xls
+*.sqlite
+*.db
+
+# Logs
+*.log
+logs/
+
+# Archivos Temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.~*
+
+# Resultados generados (excepto archivos necesarios)
+resultados/lemmatized/plots/
+resultados/lemmatized/distinctive_lemmas_*.csv
+resultados/*/temp/
+resultados/*/cache/
+
+# Archivos del SO
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Caché
+*.cache
+.cache
+
+# Configuración local
+config.local.py
+settings.local.py
+
+# Archivos de compilación
+*.o
+*.a
+*.so
+
+# Documentación generada
+docs/_build/
+site/
+
+# Entornos específicos
+.env
+.env.local
+.env.*.local
+credentials.json
+config_private.json
+
+# Node (si se usa)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos de respaldo
+*.backup
+*.bkp
+*.old
+
+# Carpetas de respaldo
+backup/
+backups/
+old/
+archive/

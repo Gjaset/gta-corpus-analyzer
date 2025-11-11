@@ -1,0 +1,150 @@
+Arco Narrativo: Análisis Sociolingüístico Computacional de GTA San Andreas
+==============================================================
+
+1. IDENTIFICACIÓN DEL PROBLEMA
+----------------------------
+En el campo del análisis computacional del discurso en videojuegos, existe una brecha significativa en la comprensión de cómo los patrones lingüísticos contribuyen 
+a la caracterización de personajes y la representación de dinámicas sociales. Grand Theft Auto: San Andreas, como objeto de estudio, presenta un caso particularmente
+ interesante debido a su compleja red de interacciones sociales y su representación de diferentes grupos socioeconómicos y culturales a través del lenguaje.
+
+2. CONTEXTO FUNDAMENTAL (6W)
+--------------------------
+WHO (Quién):
+- Sujetos de estudio: Todos los personajes con diálogo en GTA San Andreas
+- Enfoque especial en protagonistas y personajes recurrentes
+- Análisis diferenciado por roles narrativos y posiciones sociales
+
+WHAT (Qué):
+- Análisis léxico-computacional de patrones lingüísticos
+- Métricas clave: Type-Token Ratio (TTR), frecuencia de hapax legomena, longitud media de palabras
+- Redes de interacción entre personajes basadas en co-ocurrencias dialogales
+
+WHERE (Dónde):
+- Contexto: Universo ficticio de GTA San Andreas
+- Escenarios urbanos y rurales representados en el juego
+- Diferentes zonas socioeconómicas dentro del mundo virtual
+
+WHEN (Cuándo):
+- Período temporal del juego (años 90)
+- Análisis realizado en 2025 con herramientas modernas de NLP
+- Procesamiento secuencial del guion completo
+
+WHY (Por qué):
+- Necesidad de entender la construcción de identidades a través del lenguaje en medios interactivos
+- Validación de hipótesis sobre estratificación sociolingüística en narrativas de videojuegos
+- Contribución al campo de análisis computacional de discurso en medios digitales
+
+HOW (Cómo):
+- Preprocesamiento: Tokenización, lematización y etiquetado POS
+- Análisis cuantitativo: Métricas de riqueza léxica y patrones de uso
+- Visualización: Gráficos de red, mapas de calor y distribuciones estadísticas
+
+3. STRESS TEST METODOLÓGICO
+-------------------------
+Objeción 1: Representatividad del Corpus
+--------------------------------------
+Crítica: "El corpus analizado podría no ser representativo al basarse en un solo videojuego."
+
+Contraargumento: 
+- GTA San Andreas fue seleccionado específicamente por su amplitud narrativa y diversidad de personajes
+- El corpus contiene más de 100,000 tokens, superando el tamaño mínimo recomendado para análisis léxicos
+- La consistencia interna del juego permite un análisis controlado de variables sociolingüísticas
+
+Objeción 2: Validez de las Métricas
+---------------------------------
+Crítica: "El TTR puede ser sensible a la longitud del texto y podría no ser confiable para comparar personajes con 
+diferentes cantidades de diálogo."
+
+Contraargumento:
+- Implementamos normalización por longitud en nuestras métricas
+- Utilizamos múltiples medidas complementarias (hapax legomena, longitud media de palabras)
+- Los resultados muestran consistencia a través de diferentes métricas
+
+Objeción 3: Contexto Artificial
+----------------------------
+Crítica: "El lenguaje en videojuegos es artificial y guionizado, por lo que podría no reflejar patrones lingüísticos 
+naturales."
+
+Contraargumento:
+- El objetivo es precisamente analizar la construcción intencional de identidades lingüísticas
+- Los patrones encontrados revelan decisiones conscientes de diseño narrativo
+- El carácter artificial permite aislar variables sociolingüísticas específicas
+
+4. HALLAZGOS CLAVE Y VALIDACIÓN
+-----------------------------
+1. Estratificación Léxica
+- Encontramos correlación significativa entre el rol social del personaje y su riqueza léxica
+- Los personajes en posiciones de autoridad muestran consistentemente TTR más altos
+- Las redes de interacción revelan patrones de agrupamiento social
+
+2. Patrones de Caracterización
+- Identificamos marcadores léxicos específicos para diferentes grupos sociales
+- La longitud media de palabras varía significativamente según el contexto social
+- Los hapax legomena se concentran en momentos narrativos clave
+
+3. Validación Cruzada
+- Resultados consistentes a través de diferentes métricas
+- Patrones identificados coinciden con análisis narrativos previos
+- Significancia estadística en las diferencias observadas
+
+4. ANÁLISIS TEMÁTICO Y VOCABULARIO ENRIQUECIDO
+--------------------------------------------
+1. Dominios Temáticos Identificados
+- Territorio y Poder
+  * Vocabulario relacionado con territorios y bandas
+  * Términos de jerarquía y autoridad
+  * Referencias geográficas específicas de Los Santos
+
+- Relaciones Personales
+  * Léxico familiar y de parentesco
+  * Términos de amistad y lealtad
+  * Vocabulario de conflicto interpersonal
+
+- Actividades y Ocupaciones
+  * Jerga específica de actividades criminales
+  * Vocabulario técnico de negocios y transacciones
+  * Terminología relacionada con vehículos y armas
+
+2. Perfiles de Vocabulario Enriquecido
+- CJ (Protagonista)
+  * Mayor diversidad léxica en contextos familiares
+  * Adaptación lingüística según interlocutor
+  * Alto índice de términos únicos en momentos clave
+
+- Big Smoke
+  * Vocabulario distintivo en discursos motivacionales
+  * Uso frecuente de metáforas elaboradas
+  * Patrones léxicos que sugieren duplicidad
+
+- Officer Tenpenny
+  * Léxico de autoridad y manipulación
+  * Alternancia entre registro formal e informal
+  * Vocabulario rico en amenazas veladas
+
+3. Análisis de Registro y Contexto
+- Variación Situacional
+  * Cambios de registro según contexto social
+  * Adaptación léxica en diferentes territorios
+  * Patrones de formalidad variables
+
+- Marcadores Sociolingüísticos
+  * Identificación de vocabulario específico por grupo social
+  * Patrones de uso de jerga y argot
+  * Variación diafásica según situación comunicativa
+
+4. Evolución del Vocabulario
+- Desarrollo Narrativo
+  * Enriquecimiento léxico a lo largo de la trama
+  * Incorporación de nuevos dominios semánticos
+  * Cambios en patrones de interacción verbal
+
+- Contextos Específicos
+  * Vocabulario especializado en misiones
+  * Adaptación léxica en nuevos territorios
+  * Evolución de relaciones interpersonales
+
+5. LIMITACIONES Y TRABAJO FUTURO
+------------------------------
+- Necesidad de ampliar el análisis a otros títulos para validación externa
+- Posible incorporación de análisis de sentimiento y prosodia
+- Desarrollo de métricas específicas para diálogo en videojuegos

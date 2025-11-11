@@ -1,0 +1,148 @@
+# Análisis de datos GTA San Andreas (lemmatizado)
+Fecha: 5 Nov 2025
+
+## 1. Estadísticas generales de diálogo
+
+### 1.1 Volumen de diálogo (tokens)
+- Total de personajes analizados: 91
+- Top 5 personajes por volumen:
+  1. CJ (Carl Johnson): 5,198 tokens (20.3% del total)
+  2. SWEET: 1,333 tokens
+  3. TORENO: 937 tokens
+  4. Woozie: 918 tokens
+  5. CESAR: 825 tokens
+
+### 1.2 Riqueza léxica
+- Mayor diversidad léxica (TTR alto):
+  1. Zero: 0.667 (306 types / 459 tokens)
+  2. Ken Rosenberg: 0.619 (229 types / 370 tokens)
+  3. Woozie: 0.540 (496 types / 918 tokens)
+  4. The Truth: 0.544 (348 types / 640 tokens)
+  5. TORENO: 0.518 (485 types / 937 tokens)
+
+- Menor diversidad léxica (TTR bajo, indica repetición):
+  1. CJ: 0.231 (más repetitivo, consistente con su rol protagonista)
+  2. SWEET: 0.338
+  3. Big Smoke: 0.395
+  4. Ryder: 0.421
+
+### 1.3 Hapax legomena (palabras únicas)
+- Mayor % de palabras únicas (innovación léxica):
+  1. Zero: 76.1% hapax
+  2. Ken Rosenberg: 75.6%
+  3. TENPENNY: 67.9%
+  4. The Truth: 70.1%
+  5. Catalina: 68.8%
+
+## 2. Análisis lingüístico
+
+### 2.1 Palabras más frecuentes (global)
+1. "cj": 565 ocurrencias
+2. "get": 512 ocurrencias
+3. "man": 455 ocurrencias
+4. "go": 349 ocurrencias
+5. "hey": 251 ocurrencias
+
+### 2.2 Patrones por personaje
+
+#### CJ (protagonista)
+- Vocabulario más extenso: 1,198 types
+- Palabras distintivas: "man", "get", "hey", "yeah", "shit"
+- Estilo: informal, uso frecuente de slang
+
+#### SWEET (hermano)
+- Vocabulario barrio/pandillas: "hood", "ballas", "grove", "street"
+- Enfoque en territorio/comunidad
+- Alta frecuencia de "homie"
+
+#### TORENO (gobierno)
+- Vocabulario más formal/técnico
+- Términos distintivos: "plane", "need", "carl" (uso formal del nombre)
+- TTR alto (0.518): discurso más variado
+
+#### Woozie (empresario)
+- Vocabulario negocios: "casino", "friend", "people"
+- Estilo formal pero cercano
+- Alto TTR (0.540): discurso elaborado
+
+### 2.3 Longitud media de palabras
+- Promedio general: ~5.2 caracteres
+- Más largo: TORENO (5.47), Zero (5.51)
+- Más corto: CESAR (4.96), Big Smoke (4.99)
+
+## 3. Análisis de interacciones
+
+### 3.1 Red social
+- Centro de la red: CJ (mayor número de conexiones)
+- Subgrupos identificados:
+  1. Familia/Grove Street: CJ, Sweet, Ryder, Big Smoke
+  2. Triadas: Woozie, TRIAD
+  3. Autoridades: TENPENNY, PULASKI
+  4. Negocios: Ken Rosenberg, JIZZY
+
+### 3.2 Patrones de interacción
+- Interacciones más frecuentes:
+  1. CJ ↔ Sweet
+  2. CJ ↔ Woozie
+  3. CJ ↔ CESAR
+  4. CJ ↔ TORENO
+
+## 4. Hallazgos destacados
+
+### 4.1 Caracterización a través del lenguaje
+1. Personajes con identidad lingüística fuerte:
+   - The Truth: vocabulario hippie/místico
+   - Ken Rosenberg: lenguaje nervioso/ansioso
+   - JIZZY: jerga de proxeneta
+   - OG Loc: vocabulario hip-hop/rap
+
+2. Evolución del protagonista (CJ):
+   - Gran variedad léxica (1,198 types)
+   - Adaptación según interlocutor
+   - Mezcla de registros (calle/negocios)
+
+### 4.2 Insights narrativos
+1. Dimensiones de poder:
+   - Autoridad (TENPENNY): lenguaje amenazante
+   - Negocios (Woozie): léxico sofisticado
+   - Calle (Sweet): vocabulario territorial
+
+2. Caracterización geográfica:
+   - Grove Street: jerga específica
+   - Las Venturas: léxico de casino/negocios
+   - San Fierro: términos técnicos/triadas
+
+### 4.3 Patrones sociolingüísticos
+1. Marcadores sociales:
+   - Clase social reflejada en TTR
+   - Educación visible en longitud de palabras
+   - Poder en selección léxica
+
+2. Grupos sociales:
+   - Pandilleros: léxico territorial
+   - Empresarios: vocabulario formal
+   - Autoridades: lenguaje imperativo
+
+## 5. Conclusiones técnicas
+
+### 5.1 Métricas clave
+- Correlación negativa entre tokens y TTR
+- TTR promedio: 0.48
+- Hapax promedio: 65%
+- Longitud media palabras: 5.2 caracteres
+
+### 5.2 Distribución del diálogo
+- 20.3% del diálogo es de CJ
+- Top 5 personajes: 36% del total
+- 91 personajes con diálogo único
+
+### 5.3 Complejidad lingüística
+- Mayor: TORENO, Woozie, Ken Rosenberg
+- Media: CESAR, TENPENNY
+- Menor: personajes secundarios/ambient
+
+## Notas metodológicas
+- Análisis basado en texto lematizado
+- Stopwords filtradas
+- Métricas normalizadas para comparación
+- Red social construida por co-apariciones

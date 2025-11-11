@@ -1,0 +1,148 @@
+ANÁLISIS DE GRÁFICAS Y DESCUBRIMIENTOS: GTA SAN ANDREAS
+================================================
+
+GRUPO 1: VOLUMEN Y PARTICIPACIÓN
+------------------------------
+
+1. Top 10 Personajes por Volumen (1_top10_volumen_dialogo.png)
+------------------------------------------------------------
+Descubrimientos:
+* CJ domina el volumen total de diálogo como protagonista
+* Distribución sorprendentemente equilibrada entre personajes secundarios
+* Clara estratificación en tres niveles de participación
+
+Decisiones derivadas:
+* Concentrar análisis profundo en top 5 personajes
+* Establecer umbrales mínimos de volumen para análisis estadísticos
+* Investigar roles narrativos de personajes con volumen medio
+
+2. Riqueza Léxica vs Volumen (2_riqueza_lexica_vs_volumen.png)
+------------------------------------------------------------
+Descubrimientos:
+* No existe correlación directa volumen-riqueza
+* Personajes con bajo volumen pero alta riqueza léxica
+* Patrones distintos según rol narrativo
+
+Decisiones derivadas:
+* Investigar outliers de alta riqueza/bajo volumen
+* Desarrollar métricas normalizadas por volumen
+* Analizar contextos específicos de alta riqueza léxica
+
+GRUPO 2: COMPLEJIDAD LINGÜÍSTICA
+------------------------------
+
+3. Longitud de Palabras (3_longitud_palabras.png)
+-----------------------------------------------
+Descubrimientos:
+* Correlación entre autoridad y longitud de palabras
+* Variación significativa entre grupos sociales
+* Patrones consistentes dentro de facciones
+
+Decisiones derivadas:
+* Usar longitud de palabras como indicador de formalidad
+* Establecer perfiles lingüísticos por grupo social
+* Investigar contextos de cambio de registro
+
+4. Mapa de Calor de Métricas (4_heatmap_metricas.png)
+--------------------------------------------------
+Descubrimientos:
+* Independencia entre diferentes métricas lingüísticas
+* Patrones únicos por personaje
+* Clusters de similitud entre grupos
+
+Decisiones derivadas:
+* Desarrollar índice compuesto de complejidad
+* Identificar métricas más relevantes por contexto
+* Establecer perfiles lingüísticos multidimensionales
+
+7. Complejidad Lingüística Comparativa (7_complejidad_linguistica.png)
+-----------------------------------------------------------------
+Descubrimientos:
+* Variación significativa en TTR y hapax
+* Patrones consistentes por rol social
+* Evolución temporal de la complejidad
+
+Decisiones derivadas:
+* Usar TTR y hapax como métricas principales
+* Analizar evolución temporal del lenguaje
+* Investigar puntos de cambio en complejidad
+
+GRUPO 3: ANÁLISIS DE VOCABULARIO
+------------------------------
+
+5. Palabras más Frecuentes (5_palabras_frecuentes.png)
+---------------------------------------------------
+Descubrimientos:
+* Dominancia de términos relacionados con poder y territorio
+* Vocabulario específico por contexto social
+* Patrones temáticos claros
+
+Decisiones derivadas:
+* Categorizar vocabulario por dominios temáticos
+* Analizar distribución de temas por personaje
+* Investigar evolución temática en la narrativa
+
+8. Tokens vs Types (8_tokens_vs_types.png)
+----------------------------------------
+Descubrimientos:
+* Relación no lineal entre vocabulario total y único
+* Identificación de estilos comunicativos distintos
+* Patrones de repetición y variación
+
+Decisiones derivadas:
+* Analizar estilos comunicativos individuales
+* Investigar contextos de alta/baja variación
+* Desarrollar métricas de estilo comunicativo
+
+GRUPO 4: REDES SOCIALES
+---------------------
+
+6. Red de Interacciones (6_red_interacciones.png)
+----------------------------------------------
+Descubrimientos:
+* Estructura clara de comunidades lingüísticas
+* Personajes puente entre grupos
+* Patrones de interacción específicos
+
+Decisiones derivadas:
+* Analizar roles de personajes puente
+* Investigar patrones lingüísticos por comunidad
+* Estudiar evolución de relaciones sociales
+
+CONCLUSIONES GENERALES
+--------------------
+
+1. Hallazgos Metodológicos:
+* Necesidad de combinar múltiples métricas
+* Importancia del contexto social
+* Validez de análisis cuantitativo y cualitativo
+
+2. Patrones Lingüísticos:
+* Estratificación clara por rol social
+* Adaptación contextual del lenguaje
+* Evolución temporal significativa
+
+3. Aspectos Sociales:
+* Comunidades lingüísticas definidas
+* Roles de puente importantes
+* Jerarquías reflejadas en el lenguaje
+
+RECOMENDACIONES FUTURAS
+---------------------
+
+1. Análisis Adicional:
+* Estudiar evolución temporal
+* Profundizar en análisis contextual
+* Desarrollar métricas compuestas
+
+2. Mejoras Metodológicas:
+* Incorporar análisis de sentimiento
+* Estudiar patrones prosódicos
+* Analizar coocurrencias léxicas
+
+3. Aplicaciones:
+* Desarrollo de perfiles lingüísticos
+* Análisis de diseño narrativo
+* Estudio de construcción de personajes
+
+Este análisis ha revelado patrones significativos en el uso del lenguaje dentro del juego, proporcionando insights valiosos sobre la construcción de personajes y la narrativa a través del lenguaje.

@@ -1,0 +1,10 @@
+pandas
+streamlit
+plotly
+networkx
+matplotlib
+seaborn
+spacy
+nltk
+jupyter-dash
+dash
