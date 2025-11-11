@@ -183,10 +183,30 @@ HEAT_SCALE = ['#e8f5e9', PA_PRIMARY, '#66bb6a', PA_SECOND, PA_TERTIARY]
 @st.cache_data
 def load_data():
     data = {}
-    data['top_words'] = pd.read_csv(RESULTS_DIR / 'top_words_lemmatized.csv')
-    data['top_characters'] = pd.read_csv(RESULTS_DIR / 'top_characters_lemmatized.csv')
-    data['interaction_matrix'] = pd.read_csv(RESULTS_DIR / 'interaction_matrix_lemmatized.csv', index_col=0)
-    data['interaction_edges'] = pd.read_csv(RESULTS_DIR / 'interaction_edges_lemmatized.csv')
+    
+    # Verificar que la carpeta existe
+    if not RESULTS_DIR.exists():
+        raise FileNotFoundError(f"Carpeta de resultados no encontrada: {RESULTS_DIR}")
+    
+    try:
+        data['top_words'] = pd.read_csv(RESULTS_DIR / 'top_words_lemmatized.csv')
+    except FileNotFoundError as e:
+        raise FileNotFoundError(f"No se encontró top_words_lemmatized.csv en {RESULTS_DIR}: {e}")
+    
+    try:
+        data['top_characters'] = pd.read_csv(RESULTS_DIR / 'top_characters_lemmatized.csv')
+    except FileNotFoundError as e:
+        raise FileNotFoundError(f"No se encontró top_characters_lemmatized.csv en {RESULTS_DIR}: {e}")
+    
+    try:
+        data['interaction_matrix'] = pd.read_csv(RESULTS_DIR / 'interaction_matrix_lemmatized.csv', index_col=0)
+    except FileNotFoundError as e:
+        raise FileNotFoundError(f"No se encontró interaction_matrix_lemmatized.csv en {RESULTS_DIR}: {e}")
+    
+    try:
+        data['interaction_edges'] = pd.read_csv(RESULTS_DIR / 'interaction_edges_lemmatized.csv')
+    except FileNotFoundError as e:
+        raise FileNotFoundError(f"No se encontró interaction_edges_lemmatized.csv en {RESULTS_DIR}: {e}")
     
     per_char = {}
     for p in RESULTS_DIR.glob('word_counts_*.csv'):
@@ -209,7 +229,9 @@ def load_data():
 try:
     data = load_data()
 except Exception as e:
-    st.error(f'Error cargando datos: {e}')
+    st.error(f'Error cargando datos: {str(e)}')
+    st.error(f'Ruta esperada: {RESULTS_DIR}')
+    st.error(f'¿Existe la carpeta?: {RESULTS_DIR.exists()}')
     st.stop()
 
 # Funciones auxiliares
