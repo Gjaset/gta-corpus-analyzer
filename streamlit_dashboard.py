@@ -14,7 +14,6 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import os
 
-# Usar ruta absoluta basada en la ubicación del script
 SCRIPT_DIR = Path(__file__).parent.absolute()
 RESULTS_DIR = SCRIPT_DIR / 'resultados' / 'lemmatized'
 PLOTS_DIR = RESULTS_DIR / 'plots'
@@ -268,10 +267,31 @@ with st.sidebar:
     
     # Filtros generales
     st.subheader('🔍 Filtros')
-    min_word_count = st.slider(
-        'Umbral mínimo de frecuencia',
-        0, 50, 1,
-        help='Mostrar palabras que aparecen al menos este número de veces'
+    # Sin umbral mínimo de frecuencia - mostrar todas las palabras
+    min_word_count = 1
+    
+    # Filtro de rango de frecuencia para palabras
+    col1, col2 = st.columns(2)
+    with col1:
+        freq_min = st.number_input('Freq. mín.', min_value=1, max_value=100, value=1, step=1)
+    with col2:
+        freq_max = st.number_input('Freq. máx.', min_value=1, max_value=500, value=200, step=10)
+    
+    # Filtro de longitud de palabras
+    word_length_filter = st.slider(
+        'Longitud mínima de palabra (caracteres)',
+        min_value=1,
+        max_value=20,
+        value=1,
+        help='Mostrar solo palabras con esta longitud mínima'
+    )
+    
+    # Tipo de visualización en Patrones de Vocabulario
+    viz_type = st.radio(
+        'Vista de palabras frecuentes',
+        ['Tabla', 'Gráfico de barras', 'Ambas'],
+        horizontal=True,
+        help='Selecciona cómo ver las palabras más frecuentes'
     )
     
     st.markdown('---')
@@ -460,64 +480,170 @@ with tab1:
 
 with tab2:
     st.subheader("Análisis de Complejidad Lingüística")
-    if character != 'Todos los personajes' and character in data['per_char']:
-        # Gráfico de radar comparativo
-        metrics_comparison = []
-        cj_key = next((k for k in data['per_char'].keys() if 'CJ' in k), None)
+    
+    # Encontrar CJ
+    cj_key = next((k for k in data['per_char'].keys() if 'CJ' in k), None)
+    
+    if cj_key:
+        # Controles para seleccionar personajes a comparar
+        st.markdown("**Selecciona personajes para analizar**")
         
-        if cj_key:
-            chars_to_compare = [character, cj_key]
-            for char in chars_to_compare:
-                char_data = data['per_char'][char]
+        available_chars = sorted([c for c in data['per_char'].keys()])
+        default_selected = [cj_key]  # CJ por defecto
+        
+        # Si hay un personaje seleccionado actualmente, incluirlo también
+        if character != 'Todos los personajes' and character in available_chars and character != cj_key:
+            default_selected.append(character)
+        
+        col1, col2, col3 = st.columns([2, 1, 1])
+        with col1:
+            selected_chars = st.multiselect(
+                'Personajes a analizar:',
+                options=available_chars,
+                default=default_selected,
+                key='complexity_chars'
+            )
+        
+        with col2:
+            max_comparisons = st.number_input('Máx. personajes:', min_value=1, max_value=8, value=5)
+            if len(selected_chars) > max_comparisons:
+                selected_chars = selected_chars[:max_comparisons]
+                st.warning(f'Limitado a {max_comparisons} personajes')
+        
+        with col3:
+            show_table = st.checkbox('Mostrar tabla', value=True)
+        
+        if selected_chars:
+            # Función auxiliar para calcular métricas
+            def calculate_metrics(char_name):
+                char_data = data['per_char'][char_name]
                 total_words = char_data['count'].sum()
                 unique_words = len(char_data)
                 avg_word_length = char_data.apply(lambda x: len(str(x['lemma'])) * x['count'], axis=1).sum() / total_words
+                
                 ttr = unique_words / total_words if total_words > 0 else 0
                 
-                metrics = {
-                    'TTR': ttr,
-                    'Longitud Promedio': avg_word_length / 10,
-                    'Riqueza Vocabulario': unique_words / total_words,
-                    'Frecuencia de Uso': total_words / max(data['top_characters']['word_count'])
+                return {
+                    'name': char_name,
+                    'total_words': total_words,
+                    'unique_words': unique_words,
+                    'avg_length': avg_word_length,
+                    'ttr': ttr
                 }
-                
-                metrics_comparison.append(metrics)
             
-            categories = list(metrics_comparison[0].keys())
+            # Calcular métricas para normalización
+            all_metrics = [calculate_metrics(char) for char in selected_chars]
+            max_avg_length = max(m['avg_length'] for m in all_metrics)
+            
+            # Construir datos para el gráfico
+            metrics_data = []
+            for metrics in all_metrics:
+                normalized_length = metrics['avg_length'] / max_avg_length if max_avg_length > 0 else 0
+                complexity = (metrics['ttr'] + normalized_length) / 2
+                
+                metrics_data.append({
+                    'name': metrics['name'],
+                    'Diversidad Léxica': min(metrics['ttr'], 1.0),
+                    'Longitud Palabras': normalized_length,
+                    'Complejidad General': complexity,
+                    'Densidad Vocab.': min(metrics['unique_words'] / max(50, metrics['total_words'] / 5), 1.0)
+                })
+            
+            # Colores para cada personaje
+            colors = ['#4ECDC4', '#FF6B6B', '#95E1D3', '#F38181', '#AA96DA', '#FCBAD3', '#FFD93D', '#6BCB77']
+            
+            categories = ['Diversidad Léxica', 'Longitud Palabras', 'Complejidad General', 'Densidad Vocab.']
             fig_radar = go.Figure()
             
-            fig_radar.add_trace(go.Scatterpolar(
-                r=[metrics_comparison[0][cat] for cat in categories],
-                theta=categories,
-                fill='toself',
-                name=character
-            ))
+            for idx, metrics in enumerate(metrics_data):
+                is_cj = metrics['name'] == cj_key
+                line_width = 3 if is_cj else 2
+                
+                fig_radar.add_trace(go.Scatterpolar(
+                    r=[metrics[cat] for cat in categories],
+                    theta=categories,
+                    fill='toself',
+                    name=metrics['name'],
+                    line=dict(color=colors[idx % len(colors)], width=line_width),
+                    fillcolor=f"rgba({int(colors[idx % len(colors)][1:3], 16)}, {int(colors[idx % len(colors)][3:5], 16)}, {int(colors[idx % len(colors)][5:7], 16)}, {'0.4' if is_cj else '0.2'})",
+                    opacity=1.0
+                ))
             
-            fig_radar.add_trace(go.Scatterpolar(
-                r=[metrics_comparison[1][cat] for cat in categories],
-                theta=categories,
-                fill='toself',
-                name='CJ'
-            ))
+            title_text = 'Análisis de Complejidad Lingüística'
+            if cj_key in selected_chars:
+                title_text += ' (CJ resaltado en línea más gruesa)'
             
             fig_radar.update_layout(
                 polar=dict(
                     radialaxis=dict(
                         visible=True,
                         range=[0, 1],
-                        gridcolor='rgba(27, 94, 32, 0.3)',
-                        tickcolor='#1b5e20'
+                        gridcolor='rgba(27, 94, 32, 0.4)',
+                        tickcolor='#1b5e20',
+                        tickfont=dict(color='#e0e0e0', size=10)
                     ),
-                    bgcolor='rgba(15, 15, 30, 0.5)'
+                    angularaxis=dict(
+                        tickfont=dict(color='#e0e0e0', size=11),
+                        gridcolor='rgba(27, 94, 32, 0.2)'
+                    ),
+                    bgcolor='rgba(15, 15, 30, 0.3)'
                 ),
                 showlegend=True,
-                title=dict(text='Comparación de Métricas con CJ', font=dict(color='#1b5e20', size=16)),
+                title=dict(
+                    text=title_text,
+                    font=dict(color='#ffffff', size=16),
+                    x=0.5,
+                    xanchor='center'
+                ),
                 paper_bgcolor='#0f0f1e',
-                font=dict(color='#e0e0e0'),
-                legend=dict(font=dict(color='#e0e0e0'))
+                font=dict(color='#e0e0e0', size=12),
+                legend=dict(
+                    font=dict(color='#e0e0e0', size=10),
+                    x=1.05,
+                    y=1,
+                    bgcolor='rgba(0, 0, 0, 0)',
+                    bordercolor='rgba(27, 94, 32, 0.3)',
+                    borderwidth=1
+                ),
+                height=500,
+                margin=dict(l=80, r=150, t=100, b=80)
             )
             
             st.plotly_chart(fig_radar, use_container_width=True)
+            
+            # Tabla comparativa
+            if show_table:
+                st.subheader("📊 Comparación Detallada")
+                comparison_df = pd.DataFrame([
+                    {
+                        'Personaje': m['name'],
+                        'Diversidad Léxica': f"{m['Diversidad Léxica']:.3f}",
+                        'Longitud Palabras': f"{m['Longitud Palabras']:.3f}",
+                        'Complejidad': f"{m['Complejidad General']:.3f}",
+                        'Densidad': f"{m['Densidad Vocab.']:.3f}"
+                    }
+                    for m in metrics_data
+                ])
+                st.dataframe(comparison_df, use_container_width=True)
+            
+            # Mostrar explicación de métricas
+            with st.expander("📊 Explicación de métricas", expanded=False):
+                st.markdown("""
+                **Diversidad Léxica (TTR)**: Ratio de palabras únicas vs total de palabras. 
+                - 0.2-0.3: Vocabulario repetitivo
+                - 0.3-0.5: Vocabulario variado (ideal)
+                - 0.5+: Muy diverso pero menos frecuencia
+                
+                **Longitud de Palabras**: Promedio de caracteres por palabra normalizado.
+                - Valores altos indican palabras más largas y complejas
+                
+                **Complejidad General**: Combinación de diversidad y longitud de palabras.
+                - Métrica agregada de complejidad lingüística
+                
+                **Densidad de Vocabulario**: Proporción de palabras únicas por cada 5 palabras.
+                - Indica cuán "fresco" es el vocabulario usado
+                """)
+
 
 # 3. PATRONES DE VOCABULARIO
 st.header('3️⃣ Patrones de Vocabulario', help='Análisis del uso de palabras')
@@ -543,34 +669,48 @@ with tab3:
             title = 'No hay datos disponibles'
     
     # Filtrar y ordenar
-    df_display = df_display[df_display['count'] >= min_word_count]
-    df_display = df_display.head(top_n)
+    df_display = df_display[(df_display['count'] >= freq_min) & (df_display['count'] <= freq_max)]
+    df_display = df_display[df_display['lemma'].str.len() >= word_length_filter]
     df_display = df_display.sort_values('count', ascending=sort_dir == 'Frecuencia ↑')
+    df_display = df_display.head(top_n)
     
     if not df_display.empty:
-        fig = px.bar(df_display, 
-                    x='count', 
-                    y='lemma',
-                    orientation='h',
-                    title=title,
-                    labels={'count': 'Frecuencia', 'lemma': 'Palabra'},
-                    color_discrete_sequence=[PA_PRIMARY])
+        # Mostrar según tipo de visualización seleccionado
+        show_table = viz_type in ['Tabla', 'Ambas']
+        show_chart = viz_type in ['Gráfico de barras', 'Ambas']
         
-        fig.update_layout(
-            showlegend=False,
-            title_x=0.5,
-            margin=dict(l=10, r=10, t=30, b=10),
-            xaxis=dict(title_font=dict(size=12), gridcolor='rgba(27, 94, 32, 0.2)'),
-            yaxis=dict(title_font=dict(size=12)),
-            plot_bgcolor='rgba(15, 15, 30, 0.5)',
-            paper_bgcolor='#0f0f1e',
-            font=dict(color='#e0e0e0'),
-            title_font=dict(color='#1b5e20', size=16)
-        )
+        if show_chart:
+            fig = px.bar(df_display, 
+                        x='count', 
+                        y='lemma',
+                        orientation='h',
+                        title=title,
+                        labels={'count': 'Frecuencia', 'lemma': 'Palabra'},
+                        color_discrete_sequence=[PA_PRIMARY])
+            
+            fig.update_layout(
+                showlegend=False,
+                title_x=0.5,
+                margin=dict(l=10, r=10, t=30, b=10),
+                xaxis=dict(title_font=dict(size=12), gridcolor='rgba(27, 94, 32, 0.2)'),
+                yaxis=dict(title_font=dict(size=12)),
+                plot_bgcolor='rgba(15, 15, 30, 0.5)',
+                paper_bgcolor='#0f0f1e',
+                font=dict(color='#e0e0e0'),
+                title_font=dict(color='#1b5e20', size=16)
+            )
+            
+            st.plotly_chart(fig, use_container_width=True)
         
-        st.plotly_chart(fig, use_container_width=True)
+        if show_table:
+            st.subheader('📋 Datos Detallados')
+            st.dataframe(
+                df_display.reset_index(drop=True),
+                use_container_width=True,
+                height=400
+            )
     else:
-        st.info('No hay datos disponibles con los filtros actuales')
+        st.info('No hay palabras que cumplan con los filtros actuales')
 
 with tab4:
     col_wc1, col_wc2 = st.columns([3, 1])
