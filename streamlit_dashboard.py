@@ -12,8 +12,11 @@ from sklearn.feature_extraction.text import CountVectorizer
 import numpy as np
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+import os
 
-RESULTS_DIR = Path('resultados') / 'lemmatized'
+# Usar ruta absoluta basada en la ubicación del script
+SCRIPT_DIR = Path(__file__).parent.absolute()
+RESULTS_DIR = SCRIPT_DIR / 'resultados' / 'lemmatized'
 PLOTS_DIR = RESULTS_DIR / 'plots'
 
 # Configuración de página
