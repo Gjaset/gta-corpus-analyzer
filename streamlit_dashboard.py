@@ -302,6 +302,7 @@ with st.sidebar:
     viz_type = st.radio(
         'Vista de palabras frecuentes',
         ['Tabla', 'Gráfico de barras', 'Ambas'],
+        index=2,  # Por defecto muestra Ambas (tabla + gráfico)
         horizontal=True,
         help='Selecciona cómo ver las palabras más frecuentes'
     )
