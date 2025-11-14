@@ -255,12 +255,24 @@ def load_characters():
     return personajes
 
 # Título principal y descripción
-st.title('El lenguaje de Los Santos: Un viaje por las voces de GTA San Andreas')
-st.markdown(
-    '<p class="subtitle">Análisis detallado de los diálogos y patrones lingüísticos del juego</p>',
-    unsafe_allow_html=True
-)
+st.title('🎮 El Lenguaje de Los Santos: Un Viaje por las Voces de GTA San Andreas')
 
+# Introducción narrativa
+st.markdown("""
+### 📖 Bienvenido al Análisis Lingüístico de GTA San Andreas
+
+Este dashboard te permite explorar **cómo hablan los personajes** de uno de los videojuegos más icónicos de la historia. 
+A través de análisis cuantitativos y visualizaciones interactivas, descubrirás:
+
+- 🗣️ **Quién habla más** y con qué riqueza de vocabulario
+- 🔤 **Qué palabras definen** a cada personaje
+- 🌐 **Cómo se relacionan** los personajes a través de sus diálogos
+- 📊 **Patrones lingüísticos** que revelan la personalidad de cada voz
+
+**¿Cómo navegar?** Usa el selector de personaje en la barra lateral y explora las 4 secciones principales. 
+Cada gráfica te cuenta una historia diferente sobre el universo lingüístico de Los Santos.
+""")
+st.markdown('---')
 # Sidebar con controles
 with st.sidebar:
     st.header('🎮 Controles')
@@ -326,7 +338,13 @@ with st.sidebar:
         )
 
 # 1. VISIÓN GENERAL
-st.header('1️⃣ Visión General', help='Resumen general de los diálogos')
+st.header('1️⃣ Visión General: Los números cuentan historias')
+st.markdown(f"""
+**Comenzamos con lo esencial:** ¿Cuánto habla {character if character != 'Todos los personajes' else 'el elenco completo'}? 
+Las métricas a continuación revelan el **volumen de participación** y la **riqueza del vocabulario** utilizado.
+
+💡 *Dato curioso:* Un vocabulario único alto con pocas palabras totales indica personajes concisos pero variados en su lenguaje.
+""")
 
 # Métricas principales
 if character == 'Todos los personajes':
@@ -376,9 +394,15 @@ with col3:
     )
 
 # 2. ANÁLISIS COMPARATIVO
-st.header('2️⃣ Análisis Comparativo', help='Comparación entre personajes')
+st.header('2️⃣ Análisis Comparativo: ¿Quién habla más y mejor?')
+st.markdown("""
+**Ahora comparamos personajes lado a lado.** Esta sección te permite enfrentar diferentes voces del juego 
+y descubrir quién tiene el vocabulario más rico, quién es más prolífico, y qué patrones emergen.
 
-tab1, tab2 = st.tabs(["📊 Comparativa General", "🔄 Análisis Detallado"])
+🎯 *Usa las pestañas para alternar entre vista general y análisis de complejidad lingüística.*
+""")
+
+tab1, tab2 = st.tabs(["📊 Comparativa General", "🔄 Análisis de Complejidad Lingüística"])
 
 with tab1:
     # Selector de personajes y métricas
@@ -646,7 +670,13 @@ with tab2:
 
 
 # 3. PATRONES DE VOCABULARIO
-st.header('3️⃣ Patrones de Vocabulario', help='Análisis del uso de palabras')
+st.header('3️⃣ Patrones de Vocabulario: Las palabras que los definen')
+st.markdown("""
+**Las palabras cuentan quiénes somos.** En esta sección exploramos qué términos usa cada personaje con más frecuencia, 
+revelando sus prioridades, personalidad y rol en la historia.
+
+📚 *Alterna entre lista de palabras frecuentes y nube de palabras para diferentes perspectivas.*
+""")
 
 tab3, tab4 = st.tabs(["📝 Palabras Frecuentes", "☁️ Nube de Palabras"])
 
@@ -765,7 +795,13 @@ with tab4:
                 st.info('No hay palabras que cumplan con el umbral mínimo de frecuencia')
 
 # 4. RED DE INTERACCIONES
-st.header('4️⃣ Red de Interacciones', help='Visualización de conexiones entre personajes')
+st.header('4️⃣ Red de Interacciones: ¿Quién habla con quién?')
+st.markdown("""
+**Los Santos es un universo de relaciones.** Esta red visual muestra qué personajes interactúan más entre sí, 
+revelando alianzas, conflictos y la estructura social del juego.
+
+🔗 *Ajusta el umbral de interacciones para filtrar conexiones débiles o ver la red completa.*
+""")
 
 # Control de umbral
 min_edge = st.slider(
@@ -954,12 +990,23 @@ else:
     
     st.dataframe(df_top, use_container_width=True, hide_index=True)
 
-# Pie de página
 st.markdown('---')
-st.caption("""
-💡 **Guía del dashboard:**
-- Usa el selector de personaje en la barra lateral para análisis específicos
-- Ajusta los filtros para personalizar las visualizaciones
-- Descarga los datos usando los botones de exportación
-""")
+st.caption(""" 
+    **Hallazgos Clave del Análisis Lingüístico de GTA San Andreas**
+    
+    - **El protagonista no tiene el vocabulario más rico**  
+    Personajes secundarios como The Truth, Catalina y Woozie superan a CJ en 
+    diversidad léxica y complejidad. Esto refleja diseño intencional: CJ usa 
+    lenguaje accesible (identificación del jugador), mientras personajes breves 
+    necesitan identidades lingüísticas distintivas para ser memorables.
+    
+    - **La red de interacciones refleja la estructura narrativa**  
+    Los nodos centrales (CJ, Sweet, Big Smoke, Ryder) forman el núcleo de Grove Street,
+    mientras que personajes como Catalina, Woozie y The Truth aparecen como conectores
+    entre diferentes arcos narrativos. Las interacciones débiles marcan alianzas 
+    temporales o encuentros únicos, revelando la complejidad social del juego.
+           """)
+
+# Pie de página
+
 st.caption('Dashboard generado a partir de datos lematizados de GTA San Andreas')
